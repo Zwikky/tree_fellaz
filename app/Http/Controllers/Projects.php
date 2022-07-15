@@ -22,7 +22,7 @@ class Projects extends Controller
         $project = Project::create($request->all());
 
         if ($project) {
-            return back()->with('success', 'New Project Added Successfully');
+            return back()->with('success', 'New Project Added Successfully.');
         } else {
             return back()->with('error', 'Error Creating Project.');
             
